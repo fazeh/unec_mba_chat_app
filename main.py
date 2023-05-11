@@ -12,8 +12,8 @@ class Message:
 class ChatMessage(ft.Row):
     def __init__(self, message: Message):
         super().__init__()
-        self.vertical_alignment="start"
-        self.controls=[
+        self.vertical_alignment = "start"
+        self.controls = [
                 ft.CircleAvatar(
                     content=ft.Text(self.get_initials(message.user_name)),
                     color=ft.colors.WHITE,
