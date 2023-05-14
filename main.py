@@ -95,7 +95,11 @@ def main(page: ft.Page):
         open=True,
         modal=True,
         title=ft.Text("Welcome!"),
-        content=ft.Column([join_user_name], width=300, height=70, tight=True),
+        content=ft.Column([join_user_name,ft.Text("Students: Fatalikhan Huseynli, Samad Samadli, "
+                                                  "Turana Ahmadzada, Rasmiyya Agayeva")],
+                          width=300, height=110, tight=True
+                          ),
+
         actions=[ft.ElevatedButton(text="Join chat", on_click=join_chat_click)],
     )
 
@@ -140,4 +144,4 @@ def main(page: ft.Page):
     )
 
 
-ft.app(port=8550, target=main, view=ft.WEB_BROWSER)
+ft.app(port=8500, target=main, view=ft.WEB_BROWSER)
